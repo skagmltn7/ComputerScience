@@ -1,10 +1,12 @@
 # JVM
 
 ![JVM구성요소](https://github.com/skagmltn7/skagmltn7/assets/133394749/d8ff0a18-0804-49a6-87a7-55aa4abf6122)
+
 클래스 로더, 런타임 데이터 영역, 실행 엔진으로 구성
 
 ## 실행 순서
 ![img](https://github.com/skagmltn7/skagmltn7/assets/133394749/1a865b44-d91c-4a33-bdbb-646348ab0928)
+
 1. 자바 프로그램 실행시 JVM은 OS로 부터 메모리 할당
 2. 자바 컴파일러는 자바 소스 파일을 바이트 코드 파일로 변환
 3. 클래스 로더는 바이트 코드 파일을 JVM 메모리 영역에 로딩 및 링킹
@@ -12,6 +14,7 @@
 ***
 ## 클래스 로더
 ![img](https://github.com/skagmltn7/skagmltn7/assets/133394749/3399b768-08fe-46a6-9fc6-2e0d2fb96fbf)
+
 클래스를 메모리에 한번에 올리지 않고 어플리케이션에서 필요한 경우 동적으로 메모리에 배치(동적 로딩)
 - **로딩** : 클래스 파일을 JVM의 메모리에 로드
 - **링킹**  : 클래스 파일을 사용하기 위한 검증 과정
@@ -41,6 +44,7 @@
 ***
 ## 런타임 데이터 영역
 ![img](https://github.com/skagmltn7/skagmltn7/assets/133394749/cb55c731-3cc5-484e-bbd3-ff429eba70c7)
+
 - JVM이라는 프로그램이 운영체제 위에서 실행되면서 할당받는 메모리 영역
 - Method Area, Heap, Stack, PC Register, Native Method Stack 구성
 ***
@@ -51,6 +55,7 @@
 ***
 ### Stack Area
 ![img](https://github.com/skagmltn7/skagmltn7/assets/133394749/fe4f9f9f-07b3-4010-b865-7967d261111e)
+
 - 각 스레드마다 하나씩 존재
 - 메소드 호출시 마다 각각의 스택 프레임 생성되어 메서드 안에서 사용되는 값 저장
 - 메서드가 끝나면 프레임별로 사라짐
